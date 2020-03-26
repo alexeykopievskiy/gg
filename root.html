@@ -18,6 +18,138 @@
     </head>
     <body>
     <div class="overlay"></div>
+    <div class="quizz-container">
+        <div id="quizz" style="margin-bottom: 100px" class="row">
+            <div class="quizz-content quizz-content__main">
+                <div class="col-lg-12">
+                    <h2>How do you feel today?</h2>
+                    <h3>Is there anybody infected around?</h3>
+                    <div class="row">
+                        <div class="col-lg-6 align-center">
+                            <button id="GOOD" class="btn btn-warning btn-lg" type="button">Perfect</button>
+                        </div>
+                        <div class="col-lg-6 align-center">
+                            <button id="BAD" class="btn btn-danger btn-lg" type="button">Not so well</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 btn-recovered align-center">
+                    <button id="RECOVERED" class="btn btn-success btn-lg" type="button">Recovered</button>
+                </div>
+            </div>
+            <div class="quizz-content quizz-content__perfect">
+                <div class="col-lg-12">
+                    <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
+                    <!--<div id="map"></div>-->
+                    <div class="block">
+                        <form class="form-modal__perfect">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <button type="button" data-dismiss="modal" class="btn btn-warning btn-lg modal-dismiss modal-btn__perfect">Ok, show me the map of coronavirus spread</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="quizz-content quizz-content__recovered">
+                <div class="col-lg-12">
+                    <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
+                    <div class="block">
+                        <form class="form-modal__recovered">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <button type="button" data-dismiss="modal" class="btn btn-success btn-lg modal-dismiss modal-btn__perfect">Ok, show me the map of coronavirus spread</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="quizz-content quizz-content__not-final">
+                <div class="col-lg-12">
+                    <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
+                    <div class="block">
+                        <form class="form-modal__not-final">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <button type="button" class="btn btn-danger btn-lg modal-dismiss modal-btn__not-final">Ok, show me the map of coronavirus spread</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="quizz-content quizz-content__not">
+                <div class="col-lg-12">
+                    <h3>Sorry to hear you are not feeling well. What are your symptoms?</h3>
+                    <div class="block">
+                        <form class="form-modal__not">
+                            <div class="form-row">
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck1">
+                                    <label class="form-check-label" for="deseaseCheck1">Fever or chills </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck2">
+                                    <label class="form-check-label" for="deseaseCheck2">Cough </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck3">
+                                    <label class="form-check-label" for="deseaseCheck3">Fatigue </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck4">
+                                    <label class="form-check-label" for="deseaseCheck4">Aches and pains</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck5">
+                                    <label class="form-check-label" for="deseaseCheck5">Sore throat </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck6">
+                                    <label class="form-check-label" for="deseaseCheck6">Headaches</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck7">
+                                    <label class="form-check-label" for="deseaseCheck7">Shortness of breath</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck8">
+                                    <label class="form-check-label" for="deseaseCheck8">Runny of stuffy nose</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck9">
+                                    <label class="form-check-label" for="deseaseCheck9">Diarrhea</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck10">
+                                    <label class="form-check-label" for="deseaseCheck10">Sneezing</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="deseaseCheck11">
+                                    <label class="form-check-label" for="deseaseCheck11">Nausea</label>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="button" class="btn btn-danger btn-lg modal-dismiss modal-btn__danger modal-btn__bad-submit">Let's submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
     <div class="container margin-top: -50px">
         <section class="content">
             <div class="row">
@@ -25,135 +157,6 @@
                 <div class="col-lg-4"><b id="deaths">16,332</b> Deaths</div>
                 <div class="col-lg-4"><b id="recovered">102,524</b> Recovered</div>
                 <div class="col-lg-12 flex-center">
-                    <div id="quizz" style="margin-bottom: 100px" class="row">
-                        <div class="quizz-content quizz-content__main">
-                            <div class="col-lg-12">
-                                <h2>How do you feel today?</h2>
-                                <h3>Is there anybody infected around?</h3>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <button id="GOOD" class="btn btn-warning btn-lg" type="button">Perfect</button>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <button id="BAD" class="btn btn-danger btn-lg" type="button">Not so well</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 btn-recovered">
-                                <button id="RECOVERED" class="btn btn-success btn-lg" type="button">Recovered</button>
-                            </div>
-                        </div>
-                        <div class="quizz-content quizz-content__perfect">
-                            <div class="col-lg-12">
-                                <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
-                                <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
-                                <div class="block">
-                                    <form class="form-modal__perfect">
-                                        <div class="form-group">
-                                          <label for="exampleInputEmail1">Email address</label>
-                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                        </div>
-                                        <button type="button" data-dismiss="modal" class="btn btn-warning btn-lg modal-dismiss modal-btn__perfect">Ok, show me the map of coronavirus spread</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quizz-content quizz-content__recovered">
-                            <div class="col-lg-12">
-                                <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
-                                <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
-                                <div class="block">
-                                    <form class="form-modal__recovered">
-                                        <div class="form-group">
-                                          <label for="exampleInputEmail1">Email address</label>
-                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                        </div>
-                                        <button type="button" data-dismiss="modal" class="btn btn-success btn-lg modal-dismiss modal-btn__perfect">Ok, show me the map of coronavirus spread</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="quizz-content quizz-content__not-final">
-                            <div class="col-lg-12">
-                                <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
-                                <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
-                                <div class="block">
-                                    <form class="form-modal__not-final">
-                                        <div class="form-group">
-                                          <label for="exampleInputEmail1">Email address</label>
-                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                        </div>
-                                        <button type="button" class="btn btn-danger btn-lg modal-dismiss modal-btn__not-final">Ok, show me the map of coronavirus spread</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quizz-content quizz-content__not">
-                            <div class="col-lg-12">
-                                <h3>Sorry to hear you are not feeling well. What are your symptoms?</h3>
-                                <div class="block">
-                                    <form class="form-modal__not">
-                                        <div class="form-row">
-                                          <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck1">
-                                                <label class="form-check-label" for="deseaseCheck1">Fever or chills </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck2">
-                                                <label class="form-check-label" for="deseaseCheck2">Cough </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck3">
-                                                <label class="form-check-label" for="deseaseCheck3">Fatigue </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck4">
-                                                <label class="form-check-label" for="deseaseCheck4">Aches and pains</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck5">
-                                                <label class="form-check-label" for="deseaseCheck5">Sore throat </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck6">
-                                                <label class="form-check-label" for="deseaseCheck6">Headaches</label>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck7">
-                                                <label class="form-check-label" for="deseaseCheck7">Shortness of breath</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck8">
-                                                <label class="form-check-label" for="deseaseCheck8">Runny of stuffy nose</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck9">
-                                                <label class="form-check-label" for="deseaseCheck9">Diarrhea</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck10">
-                                                <label class="form-check-label" for="deseaseCheck10">Sneezing</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="deseaseCheck11">
-                                                <label class="form-check-label" for="deseaseCheck11">Nausea</label>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <button type="button" class="btn btn-danger btn-lg modal-dismiss modal-btn__danger modal-btn__bad-submit">Let's submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                  </form>
-                    </div>
                     <iframe style="width:100%"; width="560" height="600" src="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
                             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -507,9 +510,9 @@
             })
 
             $.getJSON('/data', function(data) {
-                $('#total').html(data.total/2);
-                $('#deaths').html(data.deaths/2);
-                $('#recovered').html(data.recovered/2);
+                $('#total').html(data.total);
+                $('#deaths').html(data.deaths);
+                $('#recovered').html(data.recovered);
 
                 var up = function() {
                     window.scrollTo(0, 0);
@@ -544,6 +547,17 @@
         })(jQuery)
 
     </script>
+    <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdck-ZX41WMKHAKjKdQXhAwEvU3c09hWQ&callback=initMap"
+      async defer></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e7cadc45f4eae4b"></script>
     </body>
 </html>
