@@ -176,6 +176,11 @@ input[type="search"] {
     overflow: hidden;
 }
 
+.quizz-container {
+    overflow-x: scroll;
+    margin-top: 40px;
+}
+
 #quizz .quizz-content .col-lg-12.btn-recovered {
     padding-top: 30px;
 }
