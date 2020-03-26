@@ -7,3 +7,7 @@ node_modules
 __pycache__
 
 static/js/compiled/*
+
+index.js
+package-lock.json
+package.json
