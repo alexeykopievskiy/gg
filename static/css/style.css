@@ -279,3 +279,7 @@ input[type="search"] {
 #quizz {
     margin: 0;
 }
+
+.addthis_inline_share_toolbox {
+    margin-top: 20px;
+}
