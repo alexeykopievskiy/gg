@@ -240,3 +240,11 @@ input[type="search"] {
 .quizz-content__not .col-lg-12 div.form-row {
     padding: 0 0 0 20px;
 }
+
+.container .content div.block,
+.container .content div.addthis_inline_share_toolbox,
+.container .content div#atstbx,
+.container .content div#atstbx2,
+.container .content div#atstbx3{
+    padding: 0;
+}
