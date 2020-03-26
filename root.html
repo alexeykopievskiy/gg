@@ -188,12 +188,6 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-12">
-                    <iframe style="width:100%" ; width="560" height="850"
-                        src="https://www-covidalliance-com.filesusr.com/html/3c0d50_1ddf69b652fb8bb90cef778d6f13cf0e.html"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="col-lg-12">
                     <h1>Top Countries Damaged</h1>
                     <div id="countries"></div>
                 </div>
@@ -532,6 +526,7 @@
                         $('#quizz').fadeIn(500);
                         $("body").addClass('scroll-hidden');
                         $(".overlay").show();
+                        $(".quizz-container").css('display', 'flex');
                         $(window).scrollTop(0);
                     }, 2000);
                 }
@@ -561,23 +556,16 @@
                 });
             });
 
-            $(".modal-btn__perfect").click(function () {
-                $("body").removeClass('scroll-hidden');
-                $(".overlay").hide();
-                $('#quizz').fadeOut(500);
-                localStorage.setItem('isModalFinished', true);
-            });
-
             $(".modal-btn__recovered").click(function () {
                 $("body").removeClass('scroll-hidden');
-                $(".overlay").hide();
+                $(".overlay, .quizz-container").hide();
                 $('#quizz').fadeOut(500);
                 localStorage.setItem('isModalFinished', true);
             });
 
             $(".modal-btn__not-final").click(function () {
                 $("body").removeClass('scroll-hidden');
-                $(".overlay").hide();
+                $(".overlay, .quizz-container").hide();
                 $('#quizz').fadeOut(500);
                 localStorage.setItem('isModalFinished', true);
             });
@@ -746,6 +734,32 @@
                     handleLocationError(false, infoWindow, map.getCenter());
                 }
             })
+
+            $(".modal-btn__perfect").click(function () {
+                $("body").removeClass('scroll-hidden');
+                $(".overlay, .quizz-container").hide();
+                $('#quizz').fadeOut(500);
+                localStorage.setItem('isModalFinished', true);
+                console.log($('.form-modal__perfect input').val());
+                console.log(marker.getPosition(), 'pos')
+
+                var posit = marker.getPosition()
+                console.log(posit, 'posi')
+
+                var latitude = posit.lat();
+                var longitude = posit.lng();
+                var data = [parseFloat(latitude), parseFloat(longitude)]
+                console.log(data, 'data')
+
+                /*$.ajax({
+                    type: "POST",
+                    url: 'http://localhost:3000/markers',
+                    data: data,
+                    dataType:"jsonp"
+                });*/
+
+                $.post('http://localhost:3000/markers', { markers: data });
+            });
 
         }
 

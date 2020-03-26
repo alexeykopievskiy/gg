@@ -11,3 +11,5 @@ static/js/compiled/*
 index.js
 package-lock.json
 package.json
+
+mydb

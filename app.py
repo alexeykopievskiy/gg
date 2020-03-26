@@ -53,7 +53,6 @@ def data():
         'recovered': data['recovered']
     })
 
-
 @app.route('/countries')
 def countries():
     result = requests.get("https://www.worldometers.info/coronavirus/")
