@@ -145,11 +145,32 @@ input[type="search"] {
 #quizz {
     margin-top: 100px;
     position: absolute;
-    left: 15%;
     padding: 80px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 1);
+    display: none;
+    z-index: 101;
 }
 
 #quizz button {
     width: 150px
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: block;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-hidden {
+    overflow: hidden;
 }

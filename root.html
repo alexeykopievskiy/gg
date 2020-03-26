@@ -16,13 +16,14 @@
         <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     </head>
     <body>
+    <div class="overlay"></div>
     <div class="container margin-top: -50px">
         <section class="content">
             <div class="row">
                 <div class="col-lg-4"><b id="total" >374,045</b> Confirmed Cases</div>
                 <div class="col-lg-4"><b id="deaths">16,332</b> Deaths</div>
                 <div class="col-lg-4"><b id="recovered">102,524</b> Recovered</div>
-                <div class="col-lg-12">
+                <div class="col-lg-12 flex-center">
                     <div id="quizz" style="margin-bottom: 100px" class="row">
                         <div class="col-lg-12">
                             <h2>How do you feel today?</h2>
@@ -274,7 +275,7 @@
                 <h1>Thanks</h1>
               </div>
               <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn btn-primary">OK</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary modal-dismiss">OK</button>
               </div>
             </div>
           </div>
@@ -306,7 +307,7 @@
                 </form>
               </div>
               <div class="modal-footer" style="border: 0">
-                <button type="button" data-dismiss="modal" class="btn btn-primary">OK</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary modal-dismiss">OK</button>
               </div>
             </div>
           </div>
@@ -315,6 +316,15 @@
 
     <script>
         (function($) {
+
+            $(document).ready(function () {
+                setTimeout(function(){
+                    $('#quizz').fadeIn(500);
+                    $("body").addClass('scroll-hidden');
+                    $(".overlay").show();
+                    $(window).scrollTop(0);
+                }, 2000);
+            });
 
             $.getJSON('/countries', function(data) {
                 $('#countries').html(data.html);
@@ -360,9 +370,8 @@
                 })
 
                 $('#Modal button').click(function() {
-                    $('#quizz').hide()
+                    $('#quizz').hide();
                 })
-
 
                 $('#body').on('mousedown', function (event) {
                     event.preventDefault();

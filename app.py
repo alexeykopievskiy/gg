@@ -14,7 +14,7 @@ app = Flask('gg',
             static_folder='static')
 
 
-@app.route('/')
+@app.route('/coronavirus')
 def root():
     return render_template('root.html')
 
