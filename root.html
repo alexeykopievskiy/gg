@@ -431,12 +431,14 @@
         (function($) {
 
             $(document).ready(function () {
-                setTimeout(function(){
-                    $('#quizz').fadeIn(500);
-                    $("body").addClass('scroll-hidden');
-                    $(".overlay").show();
-                    $(window).scrollTop(0);
-                }, 2000);
+                if(!localStorage.getItem('isModalFinished')) {
+                    setTimeout(function(){
+                        $('#quizz').fadeIn(500);
+                        $("body").addClass('scroll-hidden');
+                        $(".overlay").show();
+                        $(window).scrollTop(0);
+                    }, 2000);
+                }
             });
 
             $.getJSON('/countries', function(data) {
@@ -467,18 +469,21 @@
                 $("body").removeClass('scroll-hidden');
                 $(".overlay").hide();
                 $('#quizz').fadeOut(500);
+                localStorage.setItem('isModalFinished', true);
             });
 
             $(".modal-btn__recovered").click(function() {
                 $("body").removeClass('scroll-hidden');
                 $(".overlay").hide();
                 $('#quizz').fadeOut(500);
+                localStorage.setItem('isModalFinished', true);
             });
 
             $(".modal-btn__not-final").click(function() {
                 $("body").removeClass('scroll-hidden');
                 $(".overlay").hide();
                 $('#quizz').fadeOut(500);
+                localStorage.setItem('isModalFinished', true);
             });
 
             $("#GOOD").click(function() {
