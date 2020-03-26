@@ -367,3 +367,12 @@ input[type="search"] {
   #target {
     width: 345px;
   }
+
+  #map_main {
+      height: 600px;
+      padding: 0!important;
+  }
+
+  #map_main div {
+    padding: 0!important;
+}
