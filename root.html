@@ -25,21 +25,130 @@
                 <div class="col-lg-4"><b id="recovered">102,524</b> Recovered</div>
                 <div class="col-lg-12 flex-center">
                     <div id="quizz" style="margin-bottom: 100px" class="row">
-                        <div class="col-lg-12">
-                            <h2>How do you feel today?</h2>
-                            <h3>Is there anybody infected around?</h3>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <button id="GOOD" class="btn btn-warning btn-lg" type="button" data-toggle="modal" data-target="#Modal">Perfect</button>
+                        <div class="quizz-content quizz-content__main">
+                            <div class="col-lg-12">
+                                <h2>How do you feel today?</h2>
+                                <h3>Is there anybody infected around?</h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <button id="GOOD" class="btn btn-warning btn-lg" type="button">Perfect</button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <button id="BAD" class="btn btn-danger btn-lg" type="button">Not so well</button>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <button id="BAD" class="btn btn-danger btn-lg" type="button" data-toggle="modal" data-target="#Modal">Not so well</button>
+                            </div>
+                            <div class="col-lg-12 btn-recovered">
+                                <button id="RECOVERED" class="btn btn-success btn-lg" type="button">Recovered</button>
+                            </div>
+                        </div>
+                        <div class="quizz-content quizz-content__perfect">
+                            <div class="col-lg-12">
+                                <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
+                                <div class="block">
+                                    <form class="form-modal__perfect">
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <button type="button" data-dismiss="modal" class="btn btn-warning btn-lg modal-dismiss modal-btn__perfect">Ok, show me the map of coronavirus spread</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <button id="RECOVERED" class="btn btn-success btn-lg" type="button" data-toggle="modal" data-target="#Modal">Recovered</button>
+                        <div class="quizz-content quizz-content__recovered">
+                            <div class="col-lg-12">
+                                <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
+                                <div class="block">
+                                    <form class="form-modal__recovered">
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <button type="button" data-dismiss="modal" class="btn btn-success btn-lg modal-dismiss modal-btn__perfect">Ok, show me the map of coronavirus spread</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="quizz-content quizz-content__not-final">
+                            <div class="col-lg-12">
+                                <h3>Thank you for your submission! Share and ask friends to help to stop coronavirus by <a href="#">smart quarantine</a></h3>
+                                <div class="block">
+                                    <form class="form-modal__not-final">
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <button type="button" class="btn btn-danger btn-lg modal-dismiss modal-btn__not-final">Ok, show me the map of coronavirus spread</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quizz-content quizz-content__not">
+                            <div class="col-lg-12">
+                                <h3>Sorry to hear you are not feeling well. What are your symptoms?</h3>
+                                <div class="block">
+                                    <form class="form-modal__not">
+                                        <div class="form-row">
+                                          <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Fever or chills </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Cough </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Fatigue </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Aches and pains</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Sore throat </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Headaches</label>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Shortness of breath</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Runny of stuffy nose</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Diarrhea</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Sneezing</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Nausea</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <button type="button" class="btn btn-danger btn-lg modal-dismiss modal-btn__danger modal-btn__bad-submit">Let's submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                  </form>
                     </div>
                     <iframe style="width:100%"; width="560" height="600" src="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
                             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -350,10 +459,48 @@
                 });
             });
 
+            $(".modal-btn__perfect").click(function() {
+                $("body").removeClass('scroll-hidden');
+                $(".overlay").hide();
+                $('#quizz').fadeOut(500);
+            });
+
+            $(".modal-btn__recovered").click(function() {
+                $("body").removeClass('scroll-hidden');
+                $(".overlay").hide();
+                $('#quizz').fadeOut(500);
+            });
+
+            $(".modal-btn__not-final").click(function() {
+                $("body").removeClass('scroll-hidden');
+                $(".overlay").hide();
+                $('#quizz').fadeOut(500);
+            });
+
+            $("#GOOD").click(function() {
+                $(".quizz-content__perfect").show();
+                $(".quizz-content__main").hide();
+            })
+
+            $("#RECOVERED").click(function() {
+                $(".quizz-content__recovered").show();
+                $(".quizz-content__main").hide();
+            })
+
+            $("#BAD").click(function() {
+                $(".quizz-content__not").show();
+                $(".quizz-content__main").hide();
+            })
+
+            $(".modal-btn__bad-submit").click(function() {
+                $(".quizz-content__not-final").show();
+                $(".quizz-content__not").hide();
+            })
+
             $.getJSON('/data', function(data) {
-                $('#total').html(data.total);
-                $('#deaths').html(data.deaths);
-                $('#recovered').html(data.recovered);
+                $('#total').html(data.total/2);
+                $('#deaths').html(data.deaths/2);
+                $('#recovered').html(data.recovered/2);
 
                 var up = function() {
                     window.scrollTo(0, 0);

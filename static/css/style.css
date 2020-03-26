@@ -149,6 +149,7 @@ input[type="search"] {
     background-color: rgba(255, 255, 255, 1);
     display: none;
     z-index: 101;
+    width: 650px;
 }
 
 #quizz button {
@@ -173,4 +174,69 @@ input[type="search"] {
 
 .scroll-hidden {
     overflow: hidden;
+}
+
+#quizz .quizz-content .col-lg-12.btn-recovered {
+    padding-top: 30px;
+}
+
+.form-modal__perfect {
+    width: 100%;
+}
+
+#quizz .quizz-content,
+#quizz .quizz-content .col-lg-12 {
+    padding: 0;
+}
+
+#quizz .form-modal__perfect button,
+#quizz .form-modal__not-final button,
+#quizz .form-modal__not button,  
+#quizz .form-modal__recovered button {
+    width: 100%;
+}
+
+.form-modal__perfect .form-group,
+.form-modal__not-final .form-group,
+.form-modal__not .form-row,
+.form-modal__recovered .form-group {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.form-modal__not .form-row {
+    margin: 20px 0;
+}
+
+.form-modal__not div.form-check {
+    padding: 0;
+}
+
+.quizz-content {
+
+}
+
+.quizz-content__main {
+    display: block;
+}
+
+.quizz-content__perfect {
+    display: none;
+}
+
+.quizz-content__recovered {
+    display: none;
+}
+
+.quizz-content__not {
+    display: none;
+}
+
+.quizz-content__not-final {
+    display: none;
+}
+
+.quizz-content__not .col-lg-12 div.block,
+.quizz-content__not .col-lg-12 div.form-row {
+    padding: 0 0 0 20px;
 }
